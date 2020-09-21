@@ -1,9 +1,8 @@
 <?php
 
 namespace Drupal\csv_import\Plugin\Field\FieldType;
-use Drupal\Core\Field\FieldItemBase;
+
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
-use Drupal\Core\TypedData\DataDefinition;
 use Drupal\file\Plugin\Field\FieldType\FileItem;
 
 /**
@@ -21,26 +20,23 @@ use Drupal\file\Plugin\Field\FieldType\FileItem;
 class CsvImport extends FileItem {
 
   /**
-   * @inheritDoc
+   * {@inheritdoc}
    */
-  public static function schema(FieldStorageDefinitionInterface $field_definition)
-  {
+  public static function schema(FieldStorageDefinitionInterface $field_definition) {
     return parent::schema($field_definition);
   }
 
   /**
-   * @inheritDoc
+   * {@inheritdoc}
    */
-  public static function propertyDefinitions(FieldStorageDefinitionInterface $field_definition)
-  {
+  public static function propertyDefinitions(FieldStorageDefinitionInterface $field_definition) {
     return parent::propertyDefinitions($field_definition);
   }
 
   /**
-   * @inheritDoc
+   * {@inheritdoc}
    */
-  public function isEmpty()
-  {
+  public function isEmpty() {
     return parent::isEmpty();
   }
 
